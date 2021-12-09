@@ -4,10 +4,32 @@
 ---
 
 ## Installation
-React router dom [Link](https://v5.reactrouter.com/web/guides/quick-start)
+### React router dom [Link](https://v5.reactrouter.com/web/guides/quick-start)
 ```
 npm i react-router-dom@5.3.0
 ``` 
+
+### gh-pages
+> github page에 업로드 할 수 있게하는 서비스
+웹사이트를 만들어 준다! **무료**
+```
+npm i gh-pages
+npm run build
+```
+> build 후 ``package.json`` 에서 아래 소스 추가
+> ```
+> "scripts": {
+>   "start": "react-scripts start",
+>   "build": "react-scripts build",
+>   "test": "react-scripts test",
+>   "eject": "react-scripts eject",
+>   "deploy": "gh-pages -d build",
+>   "predeploy": "npm run build"
+> }
+> ```
+> > **script 실행순서** 
+> > ``build`` > ``predeploy`` > ``deploy``
+
 
 
 [시청강의 : 노마드코더
