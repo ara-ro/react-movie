@@ -8,8 +8,8 @@ import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 
 function App() {
-  return 
-  <Router basename={process.env.PUBLIC_URL}>
+  return (
+    <Router basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route path="/hello">
         <h1>Hello!</h1>
@@ -21,7 +21,8 @@ function App() {
         <Home />
       </Route>
     </Switch>
-  </Router>;
+  </Router>
+  );
 }
 
 export default App;
