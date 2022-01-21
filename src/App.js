@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./routes/Home";
 import Detail from "./routes/Detail";
+import Jung from "./routes/Jung";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
     <Switch>
       <Route path="/hello">
         <h1>Hello!</h1>
+      </Route>
+      <Route path="/jung">
+        <Jung />
       </Route>
       <Route path="/movie/:id">
         <Detail />
