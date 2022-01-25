@@ -44,7 +44,7 @@ function Home(){
         ) : (
           <Swiper 
             effect={'coverflow'}
-            slidesPerView={'3'}
+            slidesPerView={'5'}
             loop={true}
             coverflowEffect={{
               "rotate": 20,
